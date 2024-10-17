@@ -5,7 +5,7 @@ function createGrid(gridSize){
         const row = document.createElement("div");
         row.className = "row";
         grid.append(row);
-        
+
         for(let j = 0; j < gridSize; j++){
             const pixel = document.createElement("div");
             pixel.className= "pixel";
@@ -13,3 +13,11 @@ function createGrid(gridSize){
         }
     }
 }
+
+function eraseGrid(){
+    while(grid.firstChild){
+        grid.removeChild(grid.firstChild);
+    }
+}
+
+

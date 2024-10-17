@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+    min-width: 800px;
+
+    
+}
+
+.grid{
+    border: 1px solid rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    gap: 1px;
+    background-color: rgb(41, 41, 41);
+
+}
+
+.row{
+    flex: 1 1 0;
+    width: 100%;
+    display: flex;
+    gap: 1px;
+}
+
+
+.pixel{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+
+.pixel:hover{
+    background-color: rebeccapurple;
+}

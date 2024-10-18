@@ -11,7 +11,7 @@ body{
 
 
 .grid{
-    border: 1px solid rgb(41, 41, 41);
+    border: 2.5px solid rgba(41, 41, 41, 0.76);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,6 @@ body{
     width: 600px;
     height: 600px;
     gap: 1px;
-    background-color: rgb(41, 41, 41);
 
 }
 
@@ -27,11 +26,11 @@ body{
     flex: 1 1 0;
     width: 100%;
     display: flex;
-    gap: 1px;
 }
 
 
 .pixel{
+    border: .81px solid rgb(41, 41, 41, 0.76);
     background-color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
@@ -53,7 +52,7 @@ button{
 
 
 button, .grid{
-    border-radius: 2.5px;
+    border-radius: 2px;
 }
 
 

@@ -4,6 +4,7 @@ body{
     justify-content: center;
     min-height: 800px;
     min-width: 800px;
+    flex-direction: column;
 
     
 }

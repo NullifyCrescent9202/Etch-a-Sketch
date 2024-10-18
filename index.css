@@ -39,7 +39,19 @@ body{
 .pixel:hover{
     background-color: rebeccapurple;
 }
+input{
+    border-style: none;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 12px;
 
+    padding-bottom: 14.1px;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 148px;
+
+}
 button{
     font-size: 1.2rem;
     height: 40px;
@@ -51,7 +63,7 @@ button{
 }
 
 
-button, .grid{
+button, .grid, input{
     border-radius: 2px;
 }
 

@@ -49,7 +49,12 @@ grid_Button.addEventListener("click", (e) =>{
 
 const rainbowButton = document.querySelector(".randomColor");
 const reset = document.querySelector(".reset");
+const colors = ["brown", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "black"]
 
+function rainbow(){
+    let randomnum = Math.floor(Math.random() * 8);
+    return colors[randomnum];
+}
 
 reset.addEventListener("click", (e) =>{
     for(const x of pixel){
@@ -60,15 +65,16 @@ reset.addEventListener("click", (e) =>{
 function brush(color){
     for (const x of pixel){
         x.addEventListener("mouseover", (e) => {
-            console.log(x);
             x.style.backgroundColor = `${color}`;
         })
 }
-
 }
 
 
 rainbowButton.addEventListener("click", (e) =>{
-    brush("black");
-    
+    for (const x of pixel){
+        x.addEventListener("mouseover", (e) => {
+            x.style.backgroundColor = `${rainbow()}`;
+        })
+}
 })

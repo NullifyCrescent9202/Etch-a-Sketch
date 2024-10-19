@@ -36,9 +36,6 @@ body{
     width: 100%;
 }
 
-.pixel:hover{
-    background-color: rebeccapurple;
-}
 input{
     border-style: none;
     margin: 0px;

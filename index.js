@@ -1,7 +1,7 @@
 const grid = document.querySelector(".grid");
 const body = document.querySelector("body");
 const pixel = document.getElementsByClassName("pixel");
-createGrid(1);
+createGrid(10);
 
 function createGrid(gridSize){
     if(gridSize > 100){
@@ -49,7 +49,14 @@ grid_Button.addEventListener("click", (e) =>{
 
 const rainbowButton = document.querySelector(".randomColor");
 const reset = document.querySelector(".reset");
-const colors = ["brown", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "black"]
+const colors = [ "brown", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "black"]
+const colorinput = document.querySelector("input");
+
+colorinput.addEventListener("input", (e) =>{
+    console.log(e);
+    brush(e.target.value);
+})
+
 
 function rainbow(){
     let randomnum = Math.floor(Math.random() * 8);

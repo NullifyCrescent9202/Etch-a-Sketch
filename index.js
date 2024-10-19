@@ -1,8 +1,7 @@
 const grid = document.querySelector(".grid");
 const body = document.querySelector("body");
 const pixel = document.getElementsByClassName("pixel");
-const pixelEvent = document.querySelectorAll(".pixel");
-createGrid(8);
+createGrid(1);
 
 function createGrid(gridSize){
     if(gridSize > 100){
@@ -49,8 +48,14 @@ grid_Button.addEventListener("click", (e) =>{
 })
 
 const rainbowButton = document.querySelector(".randomColor");
+const reset = document.querySelector(".reset");
 
 
+reset.addEventListener("click", (e) =>{
+    for(const x of pixel){
+        x.style.backgroundColor = "white";
+    }
+})
 
 function brush(color){
     for (const x of pixel){
@@ -61,6 +66,9 @@ function brush(color){
 }
 
 }
+
+
 rainbowButton.addEventListener("click", (e) =>{
+    brush("black");
     
 })

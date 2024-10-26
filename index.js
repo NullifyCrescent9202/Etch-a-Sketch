@@ -71,7 +71,7 @@ reset.addEventListener("click", (e) =>{
 
 function brush(color){
     for (const x of pixel){
-        x.addEventListener("mouseover", (e) => {
+        x.addEventListener("mousedown", (e) => {
             x.style.backgroundColor = `${color}`;
         })
 }

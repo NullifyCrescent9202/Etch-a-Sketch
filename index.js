@@ -24,15 +24,11 @@ function createGrid(gridSize){
 
 
 
-let gridReset = true
 
 
 function eraseGrid(){
-    if(gridReset === true){
-        while(grid.firstChild){
-            grid.removeChild(grid.firstChild);
-        }
-    gridReset = false;
+    while(grid.firstChild){
+    grid.removeChild(grid.firstChild);
     }
 }
 
